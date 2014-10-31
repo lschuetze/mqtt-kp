@@ -1,6 +1,7 @@
 $(document).ready(function(){
     var wsUri = "ws://localhost:8080/";
     var clients = [];
+    var topics = [];
 
     $("#connect").click(function() {
         startWebSocket();
@@ -46,6 +47,7 @@ $(document).ready(function(){
 
             switch(msg.action) {
                 case "published":
+                    addTopic(msg);
                     break;
                 case "connected":
                     //writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.client);
@@ -69,17 +71,22 @@ $(document).ready(function(){
     }
 
     function addClient(json) {
-        $("#clients").append('<li>'+json.client+'</li>')
+        $("#clients").append('<li>'+json.client+'</li>');
+    }
+
+    function addTopic(json) {
+        if ($.inArray(json.topic, topics) == -1) {
+            topics.push(json.topic);
+            $("#topics").append("<li>"+json.topic+"</li>")
+        }
     }
 
     function writeToScreen(message) {
-        var pre = document.createElement("p");
-        pre.style.wordWrap = "break-word";
-        pre.innerHTML = message;
-        output.appendChild(pre);
+        $("#output").append('<li>'+message+'</li>');
     }
 
     function closeWebSocket() {
         websocket.close();
     }
+    //chart.js
 });
