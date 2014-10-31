@@ -3,3 +3,6 @@
 
 #npm, nodejs
 node_modules/
+
+#c files
+.out
