@@ -48,6 +48,7 @@ $(document).ready(function(){
             switch(msg.action) {
                 case "published":
                     addTopic(msg);
+                    addValue(msg);
                     break;
                 case "connected":
                     //writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.client);
@@ -72,6 +73,10 @@ $(document).ready(function(){
 
     function addClient(json) {
         $("#clients").append('<li>'+json.client+'</li>');
+    }
+
+    function addValue(json) {
+        $("#values").append('<li>'+json.payload+'</li>');
     }
 
     function addTopic(json) {

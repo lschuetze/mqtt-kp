@@ -1,0 +1,594 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"payl",
+				"payload"
+			],
+			[
+				"payload",
+				"payloadlen"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "mqtt-broker/mqtt-broker.js",
+			"settings":
+			{
+				"buffer_size": 1604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/controller/SoonController.java",
+			"settings":
+			{
+				"buffer_size": 1239,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/Soon.java",
+			"settings":
+			{
+				"buffer_size": 971,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mqtt-webclient/mqtt-webclient.html",
+			"settings":
+			{
+				"buffer_size": 2794,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mqtt-webclient/js/client.js",
+			"settings":
+			{
+				"buffer_size": 2314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mqtt-rpi/src/mqtt-rpi.c",
+			"settings":
+			{
+				"buffer_size": 2527,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 102.0,
+		"selected_items":
+		[
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inre",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"i",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/lars/Projects/mqtt-kp",
+		"/home/lars/Projects/mqtt-kp/mqtt-broker",
+		"/home/lars/Projects/mqtt-kp/mqtt-rpi",
+		"/home/lars/Projects/mqtt-kp/mqtt-rpi/include",
+		"/home/lars/Projects/mqtt-kp/mqtt-rpi/src",
+		"/home/lars/Projects/mqtt-kp/mqtt-webclient",
+		"/home/lars/Projects/mqtt-kp/mqtt-webclient/js"
+	],
+	"file_history":
+	[
+		"/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/VideoShop.java",
+		"/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/VideoCatalog.java",
+		"/home/lars/Projects/ComputerGrafik1/exercise1/.gitignore",
+		"/home/lars/Projects/ComputerGrafik1/.gitignore",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tools.codegen.ocl2java.test.aspectj/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/target/site/cobertura/coverage.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/target/cobertura/cobertura.ser",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.royalandloyal.ocl22javacode/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.simple.ocl22javacode/pom.xml",
+		"/home/lars/Projects/mqtt-kp/.gitignore",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.ocl2java/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tools.codegen.ocl2java.test.aspectj/src/testpackage/constraints/Class1_DefAspect_staticDefOperation01.aj",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tools.codegen.ocl2java.test.aspectj/src/testpackage/constraints/Class1_DefAspect_testSortedByIteratorExp01.aj",
+		"/home/lars/.config/touchegg/touchegg.conf",
+		"/home/lars/.local/share/applications/magicdraw.desktop",
+		"/home/lars/Projects/mqtt-kp/mqtt-rpi/include/mqtt-rpi.h",
+		"/home/lars/Projects/mqtt-kp/mqtt-broker/node_modules/mosca/node_modules/browserify/node_modules/util/test/node/format.js",
+		"/home/lars/Projects/mqtt-kp/mqtt-broker/node_modules/mosca/node_modules/lru-cache/test/foreach.js",
+		"/home/lars/Projects/mqtt-kp/mqtt-broker/node_modules/mosca/node_modules/moment/foo.coffee",
+		"/home/lars/Projects/mqtt-kp/mqtt-broker/node_modules/mosca/node_modules/moment/f.coffee",
+		"/home/lars/Projects/ComputerGrafik1/framework/cmake/cgvConfig.cmake",
+		"/home/lars/Projects/install-cgv.sh",
+		"/home/lars/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/lars/Projects/mqtt-kp/mqtt-webclient/mqtt-send-client.html",
+		"/home/lars/Projects/mqtt-kp/pom.xml",
+		"/home/lars/Projects/kp-iot/mqtt-pi/.gitignore",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/output.txt",
+		"/home/lars/Projects/dresden-ocl/standalone/org.dresdenocl.standalone.facade/src/main/java/org/dresdenocl/standalone/facade/StandaloneFacade.java",
+		"/home/lars/.local/share/applications/chrome-blpcfgokakmgnkcojhhkbfbldkacnbeo-Default.desktop",
+		"/home/lars/Projects/dresden-ocl/standalone/org.dresdenocl.standalone.facade/pom.xml",
+		"/home/lars/.local/share/applications/chrome-aohghmighlieiainnegkcijnfilokake-Default.desktop",
+		"/home/lars/.local/share/applications/chrome-apdfllckaahabafndbhieahigkjlhalf-Default.desktop",
+		"/home/lars/.local/share/applications/chrome-app-list.desktop",
+		"/home/lars/.local/share/applications/chrome-mojepfklcankkmikonjlnidiooanmpbb-Default.desktop",
+		"/home/lars/.local/share/applications/chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop",
+		"/home/lars/.local/share/applications/chrome-coobgpohoikkiipiblmjeljniedjpjpf-Default.desktop",
+		"/home/lars/.local/share/applications/chrome-gighmmpiobklfepjocnamgkkbiglidom-Default.desktop",
+		"/home/lars/Projects/dresden-ocl/standalone/.gitignore",
+		"/home/lars/Projects/dresden-ocl/standalone/org.dresdenocl.standalone.facade/.project",
+		"/home/lars/Projects/dresden-ocl/standalone/org.dresdenocl.standalone.facade/.classpath",
+		"/home/lars/Projects/dresden-ocl/standalone/org.dresdenocl.standalone.facade/src/main/java/org/dresdenocl/standalone/facade/StandaloneMetamodelRegistry.java",
+		"/home/lars/Projects/dresden-ocl/standalone/org.dresdenocl.standalone.facade/src/main/java/org/dresdenocl/standalone/codegeneration/StandaloneTransformationRegistry.java",
+		"/home/lars/Projects/dresden-ocl/standalone/tudresden.ocl20.pivot.standalone.example/Readme.txt",
+		"/home/lars/Projects/cpu-temp-indicator/cpu-temp-indicator.py",
+		"/home/lars/.local/share/applications/eclipse-rcp.desktop",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tracer.test/META-INF/MANIFEST.MF",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.debug.test/META-INF/MANIFEST.MF",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tracer.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/releng/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/targets/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tracer/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.debug.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tracer/META-INF/MANIFEST.MF",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/.gitignore",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.model/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelinstancetype.ecore/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelinstancetype/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.debug.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.CWM/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.template.sql/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.ocl22java/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelbus/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.university/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.emftext.commons.antlr3_4_0/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.pivotmodel/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelinstancetype.java/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.uml2/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.essentialocl.editor/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.essentialocl/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tracer.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.ocl2java.types/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.ecore/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.transformation/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.ocl2java.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl.staticsemantics/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.debug/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/scala.library/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelinstance/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl.resource.ocl/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.declarativ.ocl2sql.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.declarativ.ocl2sql/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.parser/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.uml/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.royalandloyal/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metrics/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.pivotmodel.edit/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.codegen.adapter/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.codegen.declarativ/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.attributegrammar.integration.kiama/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metrics.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl.resource.ocl.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.standardlibrary.java/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.facade/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.apache.commons.lang/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.interpreter/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.logging/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.living/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.essentialocl.standardlibrary/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.pain/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl.edit/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.transformation.pivot2sql/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.xsd/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.java/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.essentialocl.edit/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.kiama.attribution/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelinstancetype.xml/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelbus.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.simple/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.template/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.interpreter.ui/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.pml/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/repositories/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/repositories/latest/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.testsuite/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelbus.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelinstancetype.ecore.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.testsuite.abstract/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.metrics.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.standardlibrary.java.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tools.transformation.pivot2sql.test/pom.xml",
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.metamodels.uml2.test/pom.xml"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 95.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"soon",
+			"Class1_DefAspect_testSortedByIteratorExp01",
+			"testpackage/Class1_",
+			");\n",
+			"clients",
+			"org.antlr",
+			"StringTemplateEngine",
+			"loadumlmodel",
+			"getUMLResources",
+			"setsaveco",
+			"tudresden/ocl20/pivot",
+			"tudresden.ocl20.pivot",
+			"SQLTEmplate",
+			"org.dresdenocl.tools.template.sql",
+			"dependencie",
+			"></",
+			".types",
+			"cr",
+			">\n",
+			"repositories",
+			"exp",
+			"export"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"org/dresdenocl",
+			"org.dresdenocl",
+			"dependency",
+			"context"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "mqtt-broker/mqtt-broker.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								579,
+								579
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/controller/SoonController.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/Soon.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "mqtt-webclient/mqtt-webclient.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								348,
+								348
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "mqtt-webclient/js/client.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1892,
+								1892
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "mqtt-rpi/src/mqtt-rpi.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2276,
+								2276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "mqtt.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 79.0,
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
