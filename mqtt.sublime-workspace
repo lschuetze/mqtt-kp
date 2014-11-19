@@ -19,39 +19,7 @@
 			"file": "mqtt-broker/mqtt-broker.js",
 			"settings":
 			{
-				"buffer_size": 1604,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/controller/SoonController.java",
-			"settings":
-			{
-				"buffer_size": 1239,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/Soon.java",
-			"settings":
-			{
-				"buffer_size": 971,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "mqtt-webclient/mqtt-webclient.html",
-			"settings":
-			{
-				"buffer_size": 2794,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "mqtt-webclient/js/client.js",
-			"settings":
-			{
-				"buffer_size": 2314,
+				"buffer_size": 1484,
 				"line_ending": "Unix"
 			}
 		},
@@ -62,14 +30,42 @@
 				"buffer_size": 2527,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/websocketserver.js",
+			"settings":
+			{
+				"buffer_size": 2615,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/protocols/coap.js",
+			"settings":
+			{
+				"buffer_size": 1520,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 102.0,
+		"height": 148.0,
 		"selected_items":
 		[
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
 			[
 				"upda",
 				"Package Control: Upgrade/Overwrite All Packages"
@@ -84,10 +80,6 @@
 			],
 			[
 				"inre",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"rein",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -146,6 +138,11 @@
 	],
 	"file_history":
 	[
+		"/home/lars/Projects/mqtt-kp/mqtt-rpi/src/mqtt-rpi.c",
+		"/home/lars/Projects/mqtt-kp/mqtt-webclient/js/client.js",
+		"/home/lars/Projects/mqtt-kp/mqtt-webclient/mqtt-webclient.html",
+		"/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/Soon.java",
+		"/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/controller/SoonController.java",
 		"/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/VideoShop.java",
 		"/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/VideoCatalog.java",
 		"/home/lars/Projects/ComputerGrafik1/exercise1/.gitignore",
@@ -268,12 +265,7 @@
 		"/home/lars/Projects/dresden-ocl/dresdenocl/repositories/latest/pom.xml",
 		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.testsuite/pom.xml",
 		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelbus.test/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelinstancetype.ecore.test/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.testsuite.abstract/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.metrics.test/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.standardlibrary.java.test/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.tools.transformation.pivot2sql.test/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.metamodels.uml2.test/pom.xml"
+		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelinstancetype.ecore.test/pom.xml"
 	],
 	"find":
 	{
@@ -292,6 +284,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"}",
 			"soon",
 			"Class1_DefAspect_testSortedByIteratorExp01",
 			"testpackage/Class1_",
@@ -335,7 +328,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -344,15 +337,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1604,
+						"buffer_size": 1484,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								579,
-								579
+								100,
+								100
 							]
 						],
 						"settings":
@@ -363,127 +356,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/controller/SoonController.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1239,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/home/lars/Projects/swp14/swt14w42/prototypes/Thomas/videoshop-master/src/main/java/videoshop/model/Soon.java",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 971,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Java/Java.tmLanguage"
-						},
-						"translation.x": -0.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "mqtt-webclient/mqtt-webclient.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								348,
-								348
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "mqtt-webclient/js/client.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2314,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1892,
-								1892
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 855.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 1,
 					"file": "mqtt-rpi/src/mqtt-rpi.c",
 					"semi_transient": false,
 					"settings":
@@ -495,19 +372,75 @@
 						"selection":
 						[
 							[
-								2276,
-								2276
+								1467,
+								1467
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 450.0,
+						"translation.y": 990.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/websocketserver.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2187,
+								2187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/protocols/coap.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1458,
+								1458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
