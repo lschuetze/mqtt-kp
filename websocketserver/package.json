@@ -1,0 +1,10 @@
+{
+  "name": "websocketserver",
+  "version": "0.0.0",
+  "main": "websocketserver.js",
+  "dependencies": {
+    "coap": "~0.5.0",
+    "mosca": "^0.26.2",
+    "ws": "*"
+  }
+}

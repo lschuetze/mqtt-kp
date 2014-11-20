@@ -1,0 +1,177 @@
+<html>
+<head>
+
+  <!-- ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- all custom javascript files -->
+  <script src="./js/terminal.js"></script>
+  <script src="./js/chartconfig.js"></script>
+  <script src="./js/Chart.min.js"></script>
+  <script src="./js/socket.js"></script>
+  <script src="./js/linechart.js"></script>
+
+
+  <!-- bootstrap -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- custom css -->
+  <link href="css/custom.css" rel="stylesheet"/>
+
+  <!-- Lato font -->
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <div id="header">Komplexpraktikum Internet of Things</div>
+
+
+    <div id="main">
+
+      <div id="graph">
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <div id="console">
+        <div id="console_content"></div>
+        <div id="console_input">
+
+          <form id="console_form" action="">
+            &nbsp;&gt;<input type="text" name="fname" class="console_input_form" id="console_input_data">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="sidebar">
+
+      <div class="sidebar_entry">
+        <div class="sidebar_heading">General</div>
+        <div class="sidebar_content">
+          <div class="row">
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-primary btn-sm customprimary" width="100%">PULL</button>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Enter time in seconds">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary customprimary" type="button">PUSH</button>
+                </span>
+              </div><!-- /input-group -->
+            </div>
+          </div>
+          <div class="row topbuffer">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-danger btn-sm fullwidth customdanger">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar_entry">
+        <div class="sidebar_heading">MQTT</div>
+        <div class="sidebar_content">
+          <div class="row">
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-primary btn-sm customprimary" width="100%">PULL</button>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Enter time in seconds">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary customprimary" type="button">PUSH</button>
+                </span>
+              </div><!-- /input-group -->
+            </div>
+          </div>
+          <div class="row topbuffer">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-danger btn-sm fullwidth customdanger">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar_entry">
+        <div class="sidebar_heading">CoAP</div>
+        <div class="sidebar_content">
+          <div class="row">
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-primary btn-sm customprimary" width="100%">PULL</button>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Enter time in seconds">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary customprimary" type="button">PUSH</button>
+                </span>
+              </div><!-- /input-group -->
+            </div>
+          </div>
+          <div class="row topbuffer">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-danger btn-sm fullwidth customdanger">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar_entry">
+        <div class="sidebar_heading">DDS</div>
+        <div class="sidebar_content">
+          <div class="row">
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-primary btn-sm customprimary" width="100%">PULL</button>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Enter time in seconds">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary customprimary" type="button">PUSH</button>
+                </span>
+              </div><!-- /input-group -->
+            </div>
+          </div>
+          <div class="row topbuffer">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-danger btn-sm fullwidth customdanger">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar_entry">
+        <div class="sidebar_heading">HTTP/REST</div>
+        <div class="sidebar_content">
+          <div class="row">
+            <div class="col-sm-3">
+              <button type="button" class="btn btn-primary btn-sm customprimary" width="100%">PULL</button>
+            </div>
+            <div class="col-sm-9">
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="Enter time in seconds">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary customprimary" type="button">PUSH</button>
+                </span>
+              </div><!-- /input-group -->
+            </div>
+          </div>
+          <div class="row topbuffer">
+            <div class="col-sm-12">
+              <button type="button" class="btn btn-danger btn-sm fullwidth customdanger">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

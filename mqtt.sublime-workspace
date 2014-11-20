@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"mosca",
+				"moscaSettings"
+			],
+			[
 				"payl",
 				"payload"
 			],
@@ -16,10 +20,21 @@
 	"buffers":
 	[
 		{
-			"file": "mqtt-broker/mqtt-broker.js",
+			"file": "websocketserver/websocketserver.js",
 			"settings":
 			{
-				"buffer_size": 1484,
+				"buffer_size": 3400,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "var mqtt = function() {\n    var mosca = require('mosca');\n    var moscaSettings = {\n        port: 1883\n    };\n    var server = new mosca.Server(moscaSettings);\n    server.on('ready', setup);\n\n    var _callback;\n\n    function setup() {\n        console.log('MQTT: Mosca server is up and running, listing on port ' + moscaSettings.port);\n    }\n\n    // fired when a message is published\n    server.on('published', function(packet, client) {\n        if (client !== undefined) {\n            var ts_sent = packet.payload;\n            var json = '{\"protocol\": \"mqtt\",\"sent\":' + JSON.stringify(packet.payload) + ',\"received\":' + JSON.stringify(Date.now()) + '}';\n        }\n    });\n\n    /*\n    // fired when a client connects\n    server.on('clientConnected ', function(client) {\n        console.log('Client Connected: ', client.id);\n\n        var json = ' {\"action\": \"connected\",\"client\": ' + JSON.stringify(client.id) + '}';\n    });\n\n    // fired when a client disconnects\n    server.on('clientDisconnected ', function(client) {\n        console.log('Client Disconnected: ', client.id);\n\n        var json = ' {\"action\": \"disconnected\",\"client\": ' + JSON.stringify(client.id) + '}';\n    });\n    */\n\n    /*\n     * Receive (controls, callback)\n     * controls: JSON format\n     * callback(err, data)\n     */\n    var _receive = function(controls, callback) {\n        if (controls.method == 'PUSH') {\n            /*\n             * PUSH means you want to receive data for the given amount of time int\n             * controls.interval\n             */\n            _callback = callback;\n            console.log('PUSH ' + JSON.stringify(controls));\n        } else {\n            /*\n             * PULL means you want to receive a single value\n             */\n        }\n    };\n\n    return {\n        receive: _receive\n    };\n}();\n\nmodule.exports = mqtt;",
+			"file": "websocketserver/protocols/mqtt.js",
+			"file_size": 1830,
+			"file_write_time": 130609563873695117,
+			"settings":
+			{
+				"buffer_size": 1829,
 				"line_ending": "Unix"
 			}
 		},
@@ -32,15 +47,47 @@
 			}
 		},
 		{
-			"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/websocketserver.js",
+			"file": "webclient/js/socket.js",
 			"settings":
 			{
-				"buffer_size": 2615,
+				"buffer_size": 474,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/protocols/coap.js",
+			"file": "webclient/js/linechart.js",
+			"settings":
+			{
+				"buffer_size": 929,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/lars/.config/sublime-text-3/Packages/User/JavascriptBeautify.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 27,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webclient/index.html",
+			"settings":
+			{
+				"buffer_size": 6253,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webclient/js/terminal.js",
+			"settings":
+			{
+				"buffer_size": 831,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "websocketserver/protocols/coap.js",
 			"settings":
 			{
 				"buffer_size": 1520,
@@ -51,9 +98,25 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 148.0,
+		"height": 309.0,
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
 			[
 				"inden",
 				"Indentation: Reindent Lines"
@@ -91,20 +154,12 @@
 				"Indentation: Reindent Lines"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"re",
 				"Indentation: Reindent Lines"
 			],
 			[
 				"upgr",
 				"Package Control: Upgrade/Overwrite All Packages"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			]
 		],
 		"width": 453.0
@@ -128,16 +183,32 @@
 	},
 	"expanded_folders":
 	[
-		"/home/lars/Projects/mqtt-kp",
-		"/home/lars/Projects/mqtt-kp/mqtt-broker",
-		"/home/lars/Projects/mqtt-kp/mqtt-rpi",
-		"/home/lars/Projects/mqtt-kp/mqtt-rpi/include",
-		"/home/lars/Projects/mqtt-kp/mqtt-rpi/src",
-		"/home/lars/Projects/mqtt-kp/mqtt-webclient",
-		"/home/lars/Projects/mqtt-kp/mqtt-webclient/js"
+		"/home/lars/Code/mqtt-kp",
+		"/home/lars/Code/mqtt-kp/mqtt-broker",
+		"/home/lars/Code/mqtt-kp/mqtt-rpi",
+		"/home/lars/Code/mqtt-kp/mqtt-rpi/src",
+		"/home/lars/Code/mqtt-kp/webclient",
+		"/home/lars/Code/mqtt-kp/webclient/js",
+		"/home/lars/Code/mqtt-kp/websocketserver",
+		"/home/lars/Code/mqtt-kp/websocketserver/protocols"
 	],
 	"file_history":
 	[
+		"/home/lars/Code/mqtt-kp/webclient/js/terminal.js",
+		"/home/lars/Code/mqtt-kp/webclient/index.html",
+		"/home/lars/Code/mqtt-kp/webclient/js/chartconfig.js",
+		"/home/lars/Code/mqtt-kp/webclient/js/coap.js",
+		"/home/lars/Code/mqtt-kp/webclient/js/Chart.min.js",
+		"/home/lars/Code/mqtt-kp/webclient/js/linechart.js",
+		"/home/lars/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/lars/Code/mqtt-kp/websocketserver/protocols/coap.js",
+		"/home/lars/Code/mqtt-kp/mqtt-broker/mqtt.js",
+		"/home/lars/.config/sublime-text-3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/home/lars/.config/sublime-text-3/Packages/User/JavascriptBeautify.sublime-settings",
+		"/home/lars/.config/sublime-text-3/Packages/User/JavaScript.sublime-settings",
+		"/home/lars/Code/mqtt-kp/mqtt-rpi/src/mqtt-rpi.c",
+		"/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/protocols/coap.js",
+		"/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/websocketserver.js",
 		"/home/lars/Projects/mqtt-kp/mqtt-rpi/src/mqtt-rpi.c",
 		"/home/lars/Projects/mqtt-kp/mqtt-webclient/js/client.js",
 		"/home/lars/Projects/mqtt-kp/mqtt-webclient/mqtt-webclient.html",
@@ -166,7 +237,6 @@
 		"/home/lars/Projects/mqtt-kp/mqtt-broker/node_modules/mosca/node_modules/moment/f.coffee",
 		"/home/lars/Projects/ComputerGrafik1/framework/cmake/cgvConfig.cmake",
 		"/home/lars/Projects/install-cgv.sh",
-		"/home/lars/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
 		"/home/lars/Projects/mqtt-kp/mqtt-webclient/mqtt-send-client.html",
 		"/home/lars/Projects/mqtt-kp/pom.xml",
 		"/home/lars/Projects/kp-iot/mqtt-pi/.gitignore",
@@ -251,21 +321,7 @@
 		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl.edit/pom.xml",
 		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.transformation.pivot2sql/pom.xml",
 		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.xsd/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.java/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.essentialocl.edit/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.kiama.attribution/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.language.ocl/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelinstancetype.xml/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.modelbus.ui/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.simple/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.tools.template/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.interpreter.ui/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.examples.pml/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/repositories/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/repositories/latest/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.testsuite/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelbus.test/pom.xml",
-		"/home/lars/Projects/dresden-ocl/dresdenocl/tests/org.dresdenocl.modelinstancetype.ecore.test/pom.xml"
+		"/home/lars/Projects/dresden-ocl/dresdenocl/plugins/org.dresdenocl.metamodels.java/pom.xml"
 	],
 	"find":
 	{
@@ -328,29 +384,60 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "mqtt-broker/mqtt-broker.js",
+					"file": "websocketserver/websocketserver.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1484,
+						"buffer_size": 3400,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								106,
+								106
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "websocketserver/protocols/mqtt.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1829,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								549,
+								549
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -360,7 +447,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "mqtt-rpi/src/mqtt-rpi.c",
 					"semi_transient": false,
 					"settings":
@@ -372,36 +459,159 @@
 						"selection":
 						[
 							[
-								1467,
-								1467
+								2368,
+								2368
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.tmLanguage"
+							"syntax": "Packages/C++/C.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
+						"translation.x": -0.0,
 						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/websocketserver.js",
+					"buffer": 3,
+					"file": "webclient/js/socket.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2615,
+						"buffer_size": 474,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2187,
-								2187
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "webclient/js/linechart.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 929,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								496
+							],
+							[
+								504,
+								504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/home/lars/.config/sublime-text-3/Packages/User/JavascriptBeautify.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 27,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "webclient/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1128,
+								1128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "webclient/js/terminal.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								529,
+								529
 							]
 						],
 						"settings":
@@ -409,15 +619,15 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/home/lars/Projects/kp-2014ws-iot-multi-messenger/coap/websocketserver/protocols/coap.js",
+					"buffer": 8,
+					"file": "websocketserver/protocols/coap.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -428,16 +638,17 @@
 						"selection":
 						[
 							[
-								1458,
-								1458
+								1371,
+								1371
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.x": -0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -448,7 +659,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -484,7 +695,7 @@
 	"project": "mqtt.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -497,11 +708,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/Code/mqtt-kp/mqtt.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -519,7 +734,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 220.0,
+	"side_bar_width": 239.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

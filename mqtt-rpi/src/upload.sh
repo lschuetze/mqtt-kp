@@ -1,0 +1,1 @@
+scp make_file.sh mqtt-rpi.c pi@raspberrypi.fritz.box:~/mqtt/.
